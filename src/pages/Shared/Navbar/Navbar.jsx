@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <div>
             <nav className="flex justify-between py-1 mb-3 items-center">
-                <figure><img className="w-[300px] h-[100px] -ml-14 mt-2" src="https://i.ibb.co/sqGzrrM/logo.png" alt="" /><span>Brand Shop</span></figure>
+                <figure className="flex items-center"><img className="w-[300px] h-[100px] -ml-14 mt-2" src="https://i.ibb.co/sqGzrrM/logo.png" alt="" /><span>Brand Shop</span></figure>
                 <ul className="flex gap-5 flex-1 items-center justify-end">
                     <li className="text-lg">
                         <NavLink
