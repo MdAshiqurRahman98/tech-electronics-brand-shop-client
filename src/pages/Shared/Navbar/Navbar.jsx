@@ -15,8 +15,8 @@ const Navbar = () => {
     return (
         <div>
             <nav className="flex justify-between py-1 mb-3 items-center">
-                <figure className="flex items-center"><img className="w-[300px] h-[100px] -ml-14 mt-2" src="https://i.ibb.co/sqGzrrM/logo.png" alt="" /><span>Brand Shop</span></figure>
-                <ul className="flex gap-5 flex-1 items-center justify-end">
+                <figure className="flex items-center"><img className="w-[300px] h-[100px] -ml-14 mt-2" src="https://i.ibb.co/sqGzrrM/logo.png" alt="Logo" /><span className="text-2xl font-bold -ml-20">Brand Shop</span></figure>
+                <ul className="flex gap-5 flex-1 items-center justify-center">
                     <li className="text-lg">
                         <NavLink
                             to="/"
@@ -61,40 +61,6 @@ const Navbar = () => {
                             My Cart
                         </NavLink>
                     </li>
-
-                    <li className="text-lg">
-                        {
-                            !user && <NavLink
-                                to="/login"
-                                className={({ isActive, isPending }) =>
-                                    isPending
-                                        ? "pending"
-                                        : isActive
-                                            ? "text-[#FF444A] text-lg font-bold"
-                                            : ""
-                                }
-                            >
-                                Login
-                            </NavLink>
-                        }
-                    </li>
-
-                    <li className="text-lg">
-                        {
-                            !user && <NavLink
-                                to="/register"
-                                className={({ isActive, isPending }) =>
-                                    isPending
-                                        ? "pending"
-                                        : isActive
-                                            ? "text-[#FF444A] text-lg font-bold"
-                                            : ""
-                                }
-                            >
-                                Register
-                            </NavLink>
-                        }
-                    </li>
                 </ul>
                 <ul>
                     <li className="text-lg ml-60">
@@ -111,7 +77,7 @@ const Navbar = () => {
                                 : <NavLink
                                     to="/login"
                                 >
-                                    <button className="btn btn-sm normal-case text-white bg-[#FF444A] hover:bg-[#FF444A]">Login Now</button>
+                                    <button className="btn btn-sm normal-case text-white bg-[#FF444A] hover:bg-[#FF444A]">Login</button>
                                 </NavLink>
                         }
                     </li>
