@@ -4,7 +4,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
-import PrivateRoute from "./PrivateRoute";
+// import PrivateRoute from "./PrivateRoute";
 import AddProduct from "../pages/AddProduct/AddProduct";
 import MyCart from "../pages/MyCart/MyCart";
 import ProductDetail from "../pages/ProductDetail/ProductDetail";
@@ -22,12 +22,12 @@ const router = createBrowserRouter([
             },
             {
                 path: '/addProduct',
-                element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
+                element: <AddProduct></AddProduct>,
                 loader: () => fetch('http://localhost:5000/products')
             },
             {
                 path: '/myCart',
-                element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
+                element: <MyCart></MyCart>,
                 loader: () => fetch('http://localhost:5000/products')
             },
             {
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/products/:id',
-                element: <PrivateRoute><ProductDetail></ProductDetail></PrivateRoute>,
+                element: <ProductDetail></ProductDetail>,
                 loader: () => fetch('http://localhost:5000/products')
             }
         ]

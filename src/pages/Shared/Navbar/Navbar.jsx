@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <div>
             <nav className="flex justify-between py-1 mb-3 items-center">
-                <figure className="flex items-center"><img className="w-[300px] h-[100px] -ml-14 mt-2" src="https://i.ibb.co/sqGzrrM/logo.png" alt="Logo" /><span className="text-2xl font-bold -ml-20">Brand Shop</span></figure>
+                <figure className="flex items-center"><img className="w-[300px] h-[100px] -ml-20 mt-2" src="https://i.ibb.co/sqGzrrM/logo.png" alt="Logo" /><span className="text-2xl font-bold -ml-16">Brand Shop</span></figure>
                 <ul className="flex gap-5 flex-1 items-center justify-center">
                     <li className="text-lg">
                         <NavLink
@@ -63,7 +63,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <ul>
-                    <li className="text-lg ml-60">
+                    <li className="text-lg">
                         {
                             user ? <div className="flex items-center">
                                 <span className="mr-5">{user.displayName}</span>
