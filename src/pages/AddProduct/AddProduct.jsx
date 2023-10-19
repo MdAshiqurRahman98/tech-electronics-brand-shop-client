@@ -36,6 +36,7 @@ const AddProduct = () => {
                         icon: 'success',
                         confirmButtonText: 'OK'
                     })
+                    form.reset();
                 }
             })
     }
@@ -90,7 +91,7 @@ const AddProduct = () => {
                             <span className="label-text">Price</span>
                         </label>
                         <label className="input-group">
-                            <input type="number" name="price" placeholder="Price" className="input input-bordered w-full" />
+                            <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-4">
