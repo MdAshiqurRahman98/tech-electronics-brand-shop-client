@@ -10,7 +10,7 @@ const Products = () => {
 
     return (
         <div>
-            <div className="mb-7">
+            <div className="mb-11">
                 <ProductsSlider></ProductsSlider>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-9'>
