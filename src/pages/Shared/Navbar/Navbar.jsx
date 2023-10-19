@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="flex justify-between py-1 mb-3 items-center">
+            <nav className="flex justify-between pb-1 mb-3 items-center">
                 <figure><img className="w-[300px] h-[150px] -ml-11 mt-2" src="https://i.ibb.co/0tFR2j1/Logo.png" alt="Logo" /></figure>
                 <ul className="flex gap-5 flex-1 items-center justify-start ml-52">
                     <li className="text-lg">

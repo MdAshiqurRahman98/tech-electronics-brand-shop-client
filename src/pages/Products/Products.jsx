@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import ProductsCard from "../ProductsCard/ProductsCard";
+import ProductsSlider from "../ProductsSlider/ProductsSlider";
 
 
 const Products = () => {
@@ -9,7 +10,9 @@ const Products = () => {
 
     return (
         <div>
-            <h1 className='text-6xl text-center my-20 text-purple-600'>No. of Product: {products.length}</h1>
+            <div className="mb-7">
+                <ProductsSlider></ProductsSlider>
+            </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-9'>
                 {
                     products.map(product => <ProductsCard
