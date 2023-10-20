@@ -4,14 +4,6 @@ import PropTypes from 'prop-types';
 const ProductsCard = ({ product }) => {
     const { _id, image, name, brandName, type, price, rating } = product || {};
 
-    const handleDetails = _id => {
-        fetch(`http://localhost:5000/products/${_id}`)
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-            })
-    }
-
     return (
         <>
             {
@@ -25,8 +17,10 @@ const ProductsCard = ({ product }) => {
                         <p className="font-medium mb-1">Type: {type}</p>
                         <p className="font-medium mb-1">Price: ${price}</p>
                         <p className="font-medium mb-1">Rating: {rating}</p>
-                        <button onClick={() => handleDetails(_id)} className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3">Details</button>
-                        <Link to={`updateProduct/${_id}`}>
+                        <Link to={`/product/${_id}`}>
+                            <button className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3">Details</button>
+                        </Link>
+                        <Link to={`/updateProduct/${_id}`}>
                             <button className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3 ml-3">Update</button>
                         </Link>
                     </div>
