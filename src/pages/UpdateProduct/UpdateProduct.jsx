@@ -44,7 +44,7 @@ const UpdateProduct = () => {
     }
 
     return (
-        <div className="bg-[#F4F3F0] p-24 mb-5">
+        <div className="bg-[#F4F3F0] p-24 mb-9">
             <h2 className="text-3xl font-bold mb-7">Update a Product</h2>
             <form onSubmit={handleUpdateProduct}>
                 {/* form image and name row */}

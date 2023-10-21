@@ -43,7 +43,7 @@ const AddProduct = () => {
 
 
     return (
-        <div className="bg-[#F4F3F0] p-24 mb-5">
+        <div className="bg-[#F4F3F0] p-24 mb-9">
             <h2 className="text-3xl font-bold mb-7">Add a Product</h2>
             <form onSubmit={handleAddProduct}>
                 {/* form image and name row */}
