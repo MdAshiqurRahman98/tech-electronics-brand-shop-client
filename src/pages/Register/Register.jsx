@@ -58,7 +58,6 @@ const Register = () => {
                         console.error(error);
                     })
 
-                form.reset();
                 navigate(location?.state ? location.state : '/');
             })
             .catch(error => {

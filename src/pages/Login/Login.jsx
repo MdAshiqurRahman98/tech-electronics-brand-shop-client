@@ -43,7 +43,6 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 setSuccess('User Logged in Successfully');
-                form.reset();
                 navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
