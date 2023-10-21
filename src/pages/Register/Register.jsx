@@ -53,11 +53,12 @@ const Register = () => {
                     displayName: name,
                     photoURL: photo
                 })
-                    .then(() => console.log('profile updated'))
+                    .then(() => console.log('Profile updated'))
                     .catch(error => {
                         console.error(error);
                     })
 
+                form.reset();
                 navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
@@ -70,10 +71,13 @@ const Register = () => {
     const handleGoogleSignUp = () => {
         signInWithGoogle()
             .then(result => {
-                console.log(result.user)
+                console.log(result.user);
+                setSuccess('User Created Successfully');
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
-                console.error(error)
+                console.error(error);
+                setRegisterError(error.message);
             })
     }
 
