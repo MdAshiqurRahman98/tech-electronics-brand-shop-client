@@ -6,7 +6,7 @@ const Products = () => {
     const loadedProducts = useLoaderData();
 
     return (
-        <div>
+        <div className="mb-11">
             {
                 loadedProducts ? <>
                     <div className="mb-11">
