@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import Swal from "sweetalert2";
 
@@ -47,31 +46,22 @@ const MyCartCard = ({ product, products, setProducts }) => {
     }
 
     return (
-        <>
-            {
-                product ? <div className="card card-side rounded-lg p-5 bg-[#F8F8F8] h-[235px]">
-                    <div>
-                        <img className="w-52 h-full" src={image} alt="Product" />
-                    </div>
-                    <div className="pl-7">
-                        <h3 className="text-lg font-bold mb-2">{name}</h3>
-                        <p className="font-medium mb-1">Brand: {brandName}</p>
-                        <p className="font-medium mb-1">Type: {type}</p>
-                        <p className="font-medium mb-1">Price: ${price}</p>
-                        <p className="font-medium mb-1">Rating: {rating}</p>
+        <div className="card card-side rounded-lg p-5 bg-[#F8F8F8] h-[235px]">
+            <div>
+                <img className="w-52 h-full" src={image} alt="Product" />
+            </div>
+            <div className="pl-7">
+                <h3 className="text-lg font-bold mb-2">{name}</h3>
+                <p className="font-medium mb-1">Brand: {brandName}</p>
+                <p className="font-medium mb-1">Type: {type}</p>
+                <p className="font-medium mb-1">Price: ${price}</p>
+                <p className="font-medium mb-1">Rating: {rating}</p>
 
-                        <button onClick={handlePurchase} className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3">Purchase</button>
+                <button onClick={handlePurchase} className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3">Purchase</button>
 
-                        <button onClick={() => handleDelete(_id)} className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3 ml-3">Delete</button>
-                    </div>
-                </div>
-                    : <div className="text-center mt-52">
-                        <h3 className="text-3xl my-5">Oops!!!</h3>
-                        <p className="mb-9 text-lg">No product available</p>
-                        <Link to='/'><button className="btn bg-[#FF444A] font-semibold text-white normal-case hover:bg-[#FF444A]">Go Home</button></Link>
-                    </div>
-            }
-        </>
+                <button onClick={() => handleDelete(_id)} className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3 ml-3">Delete</button>
+            </div>
+        </div>
     );
 };
 
