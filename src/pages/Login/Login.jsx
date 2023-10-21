@@ -43,7 +43,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 setSuccess('User Logged in Successfully');
-
+                form.reset();
                 navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
@@ -55,10 +55,13 @@ const Login = () => {
     const handleGoogleSignIn = () => {
         signInWithGoogle()
             .then(result => {
-                console.log(result.user)
+                console.log(result.user);
+                setSuccess('User Logged in Successfully');
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
-                console.error(error)
+                console.error(error);
+                setLoginError(error.message);
             })
     }
 
