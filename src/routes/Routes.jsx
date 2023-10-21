@@ -20,17 +20,17 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('/brands.json')
+                loader: () => fetch('https://brand-shop-server-cjk4merp0.vercel.app/brands')
             },
             {
                 path: '/addProduct',
                 element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
-                loader: () => fetch('https://brand-shop-server-d947aetvg.vercel.app/products')
+                loader: () => fetch('https://brand-shop-server-cjk4merp0.vercel.app/products')
             },
             {
                 path: '/myCart',
                 element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-                loader: () => fetch('https://brand-shop-server-d947aetvg.vercel.app/userProducts')
+                loader: () => fetch('https://brand-shop-server-cjk4merp0.vercel.app/userProducts')
             },
             {
                 path: '/login',
@@ -43,17 +43,17 @@ const router = createBrowserRouter([
             {
                 path: '/products/:id',
                 element: <Products></Products>,
-                loader: () => fetch('https://brand-shop-server-d947aetvg.vercel.app/products')
+                loader: () => fetch('https://brand-shop-server-cjk4merp0.vercel.app/products')
             },
             {
                 path: '/product/:id',
                 element: <PrivateRoute><ProductDetail></ProductDetail></PrivateRoute>,
-                loader: ({ params }) => fetch(`https://brand-shop-server-d947aetvg.vercel.app/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://brand-shop-server-cjk4merp0.vercel.app/products/${params.id}`)
             },
             {
                 path: '/updateProduct/:id',
                 element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-                loader: ({ params }) => fetch(`https://brand-shop-server-d947aetvg.vercel.app/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://brand-shop-server-cjk4merp0.vercel.app/products/${params.id}`)
             }
         ]
     },
