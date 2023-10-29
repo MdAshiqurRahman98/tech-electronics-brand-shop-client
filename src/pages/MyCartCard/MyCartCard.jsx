@@ -70,5 +70,5 @@ export default MyCartCard;
 MyCartCard.propTypes = {
     product: PropTypes.object,
     products: PropTypes.object,
-    setProducts: PropTypes.object
+    setProducts: PropTypes.func
 }
