@@ -58,7 +58,7 @@ const UpdateProduct = () => {
                             defaultValue={image} className="input input-bordered w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/2 ml-4">
+                    <div className="form-control md:w-1/2 md:ml-4">
                         <label className="label">
                             <span className="label-text">Name</span>
                         </label>
@@ -77,7 +77,7 @@ const UpdateProduct = () => {
                             <input type="text" name="brandName" placeholder="Brand Name" defaultValue={brandName} className="input input-bordered w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/2 ml-4">
+                    <div className="form-control md:w-1/2 md:ml-4">
                         <label className="label">
                             <span className="label-text">Type</span>
                         </label>
@@ -96,7 +96,7 @@ const UpdateProduct = () => {
                             <input type="text" name="price" placeholder="Price" defaultValue={price} className="input input-bordered w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/2 ml-4">
+                    <div className="form-control md:w-1/2 md:ml-4">
                         <label className="label">
                             <span className="label-text">Rating</span>
                         </label>
