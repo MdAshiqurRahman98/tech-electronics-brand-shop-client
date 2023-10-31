@@ -15,12 +15,14 @@ const ProductsCard = ({ product }) => {
                 <p className="font-medium mb-1">Type: {type}</p>
                 <p className="font-medium mb-1">Price: ${price}</p>
                 <p className="font-medium mb-1">Rating: {rating}</p>
-                <Link to={`/product/${_id}`}>
-                    <button className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3">Details</button>
-                </Link>
-                <Link to={`/updateProduct/${_id}`}>
-                    <button className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3 ml-1 lg:ml-3">Update</button>
-                </Link>
+                <div className="flex">
+                    <Link to={`/product/${_id}`}>
+                        <button className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3 mr-1 md:mr-3">Details</button>
+                    </Link>
+                    <Link to={`/updateProduct/${_id}`}>
+                        <button className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3">Update</button>
+                    </Link>
+                </div>
             </div>
         </div>
     );

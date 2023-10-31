@@ -57,9 +57,11 @@ const MyCartCard = ({ product, products, setProducts }) => {
                 <p className="font-medium mb-1">Price: ${price}</p>
                 <p className="font-medium mb-1">Rating: {rating}</p>
 
-                <button onClick={handlePurchase} className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3">Purchase</button>
+                <div className='flex'>
+                    <button onClick={handlePurchase} className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3 mr-1 md:mr-3">Purchase</button>
 
-                <button onClick={() => handleDelete(_id)} className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3 ml-3">Delete</button>
+                    <button onClick={() => handleDelete(_id)} className="btn btn-sm text-white bg-[#FF444A] hover:bg-[#FF444A] normal-case text-[15px] font-semibold rounded mt-3">Delete</button>
+                </div>
             </div>
         </div>
     );
