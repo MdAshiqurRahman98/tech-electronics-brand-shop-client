@@ -19,7 +19,7 @@ const AddProduct = () => {
         console.log(newProduct);
 
         // Send data to the server
-        fetch('https://brand-shop-server-cjk4merp0.vercel.app/products', {
+        fetch('https://brand-shop-server-topaz.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
