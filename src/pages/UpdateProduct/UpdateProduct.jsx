@@ -23,7 +23,7 @@ const UpdateProduct = () => {
 
         // Send data to the server
         fetch(`https://brand-shop-server-topaz.vercel.app/products/${_id}`, {
-            method: 'PUT',
+            method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
             },
