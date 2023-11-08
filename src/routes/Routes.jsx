@@ -24,8 +24,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/addProduct',
-                element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
-                loader: () => fetch('https://brand-shop-server-topaz.vercel.app/products')
+                element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
             },
             {
                 path: '/myCart',
