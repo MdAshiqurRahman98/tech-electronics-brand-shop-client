@@ -13,7 +13,7 @@
 - User Authentication
 - User Private Route
 
-### Technologies which are used in this app:
+### Technologies which have been used in this app:
 
 - React
 - React-Router
