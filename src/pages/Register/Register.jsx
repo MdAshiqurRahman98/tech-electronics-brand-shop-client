@@ -58,7 +58,7 @@ const Register = () => {
                         console.error(error);
                     })
 
-                navigate(location?.state ? location.state : '/');
+                navigate(location?.state ? location.state : '/', { replace: true });
             })
             .catch(error => {
                 console.error(error);
@@ -72,7 +72,7 @@ const Register = () => {
             .then(result => {
                 console.log(result.user);
                 setSuccess('User Created Successfully');
-                navigate(location?.state ? location.state : '/');
+                navigate(location?.state ? location.state : '/', { replace: true });
             })
             .catch(error => {
                 console.error(error);
