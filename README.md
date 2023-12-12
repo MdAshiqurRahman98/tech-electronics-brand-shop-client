@@ -1,6 +1,6 @@
 # Technology and Electronics Brand Shop
 
-### Live Link: https://techelectronicsbrandshop.netlify.app/
+### Live Link: https://techelectronicsbrandshop.netlify.app
 
 ### Features of Technology and Electronics Brand Shop web app:
 
