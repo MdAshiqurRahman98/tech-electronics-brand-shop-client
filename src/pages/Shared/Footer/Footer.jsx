@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="footer p-10 text-white">
             <aside className="mt-10">
-                <p>B-tech Technology Ltd.<br />Copyright &copy; B-tech Technology | All rights reserved.</p>
+                <p>B-tech Technology Ltd.<br />Copyright &copy; {new Date().getUTCFullYear()} B-tech Technology | All rights reserved.</p>
             </aside>
             <nav>
                 <header className="footer-title">Brands</header>
